@@ -4,8 +4,8 @@ app = FastAPI()
 
 @app.post("/reset")
 def reset():
-    return {"message": "Environment reset successful"}
+    return {"status": "ok"}
 
 @app.get("/")
 def home():
-    return {"message": "API is working"}
+    return {"status": "running"}
